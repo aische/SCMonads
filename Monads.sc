@@ -224,7 +224,7 @@ StateMonadPlus : Monad {
 	
 	// fail, causes backtracking if there are alternatives
 	*fail {
-		^P{}	
+		^this.new{}	
 	}
 	
 	*new{|func|
